@@ -10,7 +10,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 @PropertySource({
-        "classpath:com/yifan/squirrel/server/basic/config/jdbc.properties"
+        "classpath:com/yifan/squirrel/server/config/dev/jdbc.properties"
 })
 public class PropertiesConfig {
 }

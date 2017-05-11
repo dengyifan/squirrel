@@ -3,20 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>squirrel</artifactId>
-        <groupId>com.yifan</groupId>
+        <artifactId>server</artifactId>
+        <groupId>com.yifan.squirrel</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yifan.squirrel</groupId>
-    <artifactId>server</artifactId>
-    <packaging>pom</packaging>
+    <groupId>com.yifan.squirrel.server</groupId>
+    <artifactId>server_config</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>server_basicdata</module>
-        <module>server_config</module>
-    </modules>
+    <packaging>jar</packaging>
+
 
 
 </project>
