@@ -7,6 +7,12 @@
           <element id="module-output" name="base" />
         </element>
         <element id="directory" name="lib">
+          <element id="archive" name="base_api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="base_api" />
+          </element>
+          <element id="archive" name="demo_shared-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="demo_share" />
+          </element>
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:6.0.6" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.8.RELEASE" />

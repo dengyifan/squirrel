@@ -7,14 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="base" />
+        <module name="base_api" />
         <module name="basic" />
+        <module name="demo_share" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="base" target="1.8" />
+      <module name="base_api" target="1.8" />
       <module name="basic" target="1.8" />
       <module name="browser" target="1.8" />
+      <module name="demo_share" target="1.8" />
       <module name="server" target="1.8" />
+      <module name="shared" target="1.8" />
       <module name="squirrel" target="1.8" />
     </bytecodeTargetLevel>
   </component>

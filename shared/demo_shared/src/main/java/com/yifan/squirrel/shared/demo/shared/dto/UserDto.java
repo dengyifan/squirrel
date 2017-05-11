@@ -1,19 +1,14 @@
-package com.yifan.squirrel.browser.base.demo.domain;
+package com.yifan.squirrel.shared.demo.shared.dto;
 
 import java.io.Serializable;
 
 /**
- * Created by yifan on 17-5-7.
+ * Created by yifan on 2017/5/11.
  */
-public class User implements Serializable{
+public class UserDto implements Serializable{
 
 
-    private String userId;
-
-    //姓名
-    private String name;
-    private String depId;
-    private String sex;
+    private static final long serialVersionUID = 2696379849774630366L;
 
     public String getUserId() {
         return userId;
@@ -47,13 +42,13 @@ public class User implements Serializable{
         this.sex = sex;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId='" + userId + '\'' +
-                ", name='" + name + '\'' +
-                ", depId='" + depId + '\'' +
-                ", sex='" + sex + '\'' +
-                '}';
-    }
+    private String userId;
+
+    //姓名
+    private String name;
+    private String depId;
+    private String sex;
+
+
+
 }

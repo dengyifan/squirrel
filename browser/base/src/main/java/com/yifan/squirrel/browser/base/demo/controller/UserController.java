@@ -1,7 +1,7 @@
 package com.yifan.squirrel.browser.base.demo.controller;
 
-import com.yifan.squirrel.browser.base.demo.domain.User;
-import com.yifan.squirrel.browser.base.demo.service.UserService;
+import com.yifan.squirrel.browser.base.api.server.service.UserService;
+import com.yifan.squirrel.shared.demo.shared.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,7 +22,7 @@ public class UserController {
 
     @RequestMapping(path = "/getAllUser", method = RequestMethod.GET)
     public String getUserList(Model model){
-        List<User> list = userService.getUserList();
+        List<UserDto> list = userService.getUserList();
         model.addAttribute("list",list);
         return "showUsers";
     }

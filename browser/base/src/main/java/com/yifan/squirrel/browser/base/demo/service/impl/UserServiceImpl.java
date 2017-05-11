@@ -1,8 +1,8 @@
 package com.yifan.squirrel.browser.base.demo.service.impl;
 
 
-import com.yifan.squirrel.browser.base.demo.domain.User;
-import com.yifan.squirrel.browser.base.demo.service.UserService;
+import com.yifan.squirrel.browser.base.api.server.service.UserService;
+import com.yifan.squirrel.shared.demo.shared.dto.UserDto;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -16,9 +16,9 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
 
     @Override
-    public List<User> getUserList() {
-        List<User> list = new ArrayList<User>();
-        User user = new User();
+    public List<UserDto> getUserList() {
+        List<UserDto> list = new ArrayList<UserDto>();
+        UserDto user = new UserDto();
         user.setUserId("user0008");
         user.setName("张三7");
         user.setDepId("010102");
@@ -28,7 +28,7 @@ public class UserServiceImpl implements UserService {
         //从后端访问
         RestTemplate restTemplate = new RestTemplate();
         String url = "http://localhost:8100/basic/getUser";
-        User user2 = restTemplate.getForObject(url, User.class);
+        UserDto user2 = restTemplate.getForObject(url, UserDto.class);
         list.add(user2);
         return list;
     }

@@ -19,6 +19,7 @@
     <modules>
         <module>server</module>
         <module>browser</module>
+        <module>shared</module>
     </modules>
 
 
