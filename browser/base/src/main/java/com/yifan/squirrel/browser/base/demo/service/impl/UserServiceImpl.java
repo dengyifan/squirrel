@@ -27,7 +27,7 @@ public class UserServiceImpl implements UserService {
 
         //从后端访问
         RestTemplate restTemplate = new RestTemplate();
-        String url = "http://localhost:8081/basic/getUser";
+        String url = "http://localhost:8100/basic/getUser";
         User user2 = restTemplate.getForObject(url, User.class);
         list.add(user2);
         return list;

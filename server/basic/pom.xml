@@ -40,7 +40,7 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.4</version>
                 <configuration>
-                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <warSourceDirectory>src/main</warSourceDirectory>
                     <warName>basic</warName>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -57,10 +57,10 @@
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.1</version>
                 <configuration>
-                    <url>http://localhost:8081/manager/html</url>
+                    <url>http://localhost:8100/manager/html</url>
                     <server>tomcat-local</server>
                     <path>/basic</path>
-                    <port>8081</port>
+                    <port>8100</port>
                 </configuration>
             </plugin>
         </plugins>
