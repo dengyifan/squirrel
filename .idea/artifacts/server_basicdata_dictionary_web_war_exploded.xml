@@ -1,14 +1,17 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="base:war exploded">
-    <output-path>$PROJECT_DIR$/browser/base/target/base</output-path>
+  <artifact type="exploded-war" name="server_basicdata_dictionary_web:war exploded">
+    <output-path>$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web/target/server_basicdata_dictionary_web-1.0-SNAPSHOT</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="base" />
+          <element id="module-output" name="server_basicdata_dictionary_web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="base_api-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="base_api" />
+          <element id="archive" name="server_basicdata_dictionary-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="server_basicdata_dictionary" />
+          </element>
+          <element id="archive" name="server_basicdata_dictionary_api-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="server_basicdata_dictionary_api" />
           </element>
           <element id="archive" name="basicdata_shared-1.0-SNAPSHOT.jar">
             <element id="module-output" name="basicdata_shared" />
@@ -40,9 +43,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/browser/base/target/base/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web/target/server_basicdata_dictionary_web-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="base/web/Web" />
+      <element id="javaee-facet-resources" facet="server_basicdata_dictionary_web/web/Web" />
     </root>
   </artifact>
 </component>

@@ -14,8 +14,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>base</module>
         <module>basic</module>
+        <module>server_basicdata</module>
     </modules>
 
 

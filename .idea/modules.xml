@@ -5,9 +5,13 @@
       <module fileurl="file://$PROJECT_DIR$/browser/base/base.iml" filepath="$PROJECT_DIR$/browser/base/base.iml" />
       <module fileurl="file://$PROJECT_DIR$/browser/base_api/base_api.iml" filepath="$PROJECT_DIR$/browser/base_api/base_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/basic/basic.iml" filepath="$PROJECT_DIR$/server/basic/basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/basicdata_shared/demo_shared.iml" filepath="$PROJECT_DIR$/shared/basicdata_shared/demo_shared.iml" />
       <module fileurl="file://$PROJECT_DIR$/browser/browser.iml" filepath="$PROJECT_DIR$/browser/browser.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shared/demo_shared/demo_share.iml" filepath="$PROJECT_DIR$/shared/demo_shared/demo_share.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary/server_basicdata_dictionary.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary/server_basicdata_dictionary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_api/server_basicdata_dictionary_api.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_api/server_basicdata_dictionary_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web/server_basicdata_dictionary_web.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web/server_basicdata_dictionary_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/shared/shared.iml" filepath="$PROJECT_DIR$/shared/shared.iml" />
       <module fileurl="file://$PROJECT_DIR$/squirrel.iml" filepath="$PROJECT_DIR$/squirrel.iml" />
     </modules>

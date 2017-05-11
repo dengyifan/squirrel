@@ -1,7 +1,7 @@
 package com.yifan.squirrel.browser.base.demo.controller;
 
 import com.yifan.squirrel.browser.base.api.server.service.UserService;
-import com.yifan.squirrel.shared.demo.shared.dto.UserDto;
+import com.yifan.squirrel.shared.basicdata.shared.dto.UserDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
