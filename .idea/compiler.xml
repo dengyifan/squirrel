@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="base" />
         <module name="base_api" />
-        <module name="basic" />
         <module name="basicdata" />
         <module name="basicdata_shared" />
         <module name="demo_share" />
