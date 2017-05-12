@@ -16,6 +16,9 @@
           <element id="archive" name="basicdata_shared-1.0-SNAPSHOT.jar">
             <element id="module-output" name="basicdata_shared" />
           </element>
+          <element id="archive" name="server_config-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="server_config" />
+          </element>
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:6.0.6" />
           <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.8.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.8.RELEASE" />

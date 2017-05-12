@@ -26,14 +26,14 @@ public class DataConfig {
     @Bean
     public BasicDataSource dataSource(){
         BasicDataSource dataSource = new BasicDataSource();
-        dataSource.setDriverClassName(env.getProperty("driverClassName"));
+        dataSource.setDriverClassName(env.getProperty("db_driverClassName"));
         dataSource.setUrl(env.getProperty("db_url"));//防止乱码
         dataSource.setUsername(env.getProperty("db_username"));
 
         //MyNewPass4!
         dataSource.setPassword(env.getProperty("db_password"));
-        dataSource.setInitialSize(Integer.valueOf(env.getProperty("initialSize")));
-        dataSource.setMaxActive(Integer.valueOf(env.getProperty("maxActive")));
+        dataSource.setInitialSize(Integer.valueOf(env.getProperty("db_initialSize")));
+        dataSource.setMaxActive(Integer.valueOf(env.getProperty("db_maxActive")));
         return dataSource;
     }
 

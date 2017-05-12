@@ -167,6 +167,23 @@
                 <warOutputDirectory>server-dev/${project.version}</warOutputDirectory>
             </properties>
         </profile>
+
+
+        <!--测试环境-->
+        <profile>
+            <id>test</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <minimize>false</minimize>
+                <environment>test</environment>
+                <environment.scope>compile</environment.scope>
+                <warOutputDirectory>server-test/${project.version}</warOutputDirectory>
+            </properties>
+        </profile>
+
+
     </profiles>
 
 
