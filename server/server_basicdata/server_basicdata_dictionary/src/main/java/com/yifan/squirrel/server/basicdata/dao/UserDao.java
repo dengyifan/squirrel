@@ -24,8 +24,8 @@ public interface UserDao {
     @Select("SELECT * FROM tbl_user WHERE userId = #{userId}")
     UserDto getUserById(@Param("userId") String userId);
 
-    @Update("UPDATE tbl_user SET sex = #{sex} WHERE userId = #{userId}")
-    void updateUserEmailById(@Param("userId") String userId, @Param("sex") String sex);
+    @Update("UPDATE tbl_user SET name = #{name} WHERE userId = #{userId}")
+    void updateUserNameById(@Param("userId") String userId, @Param("name") String name);
 
     @Delete("DELETE FROM tbl_user WHERE userId = #{userId}")
     void deleteUserById(@Param("userId") String userId);

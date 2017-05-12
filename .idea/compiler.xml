@@ -20,6 +20,7 @@
         <module name="server_basicdata_dictionary" />
         <module name="server_basicdata_dictionary_api" />
         <module name="server_basicdata_dictionary_web" />
+        <module name="server_common" />
         <module name="server_config" />
       </profile>
     </annotationProcessing>
@@ -46,6 +47,7 @@
       <module name="server_basicdata_dictionary" target="1.8" />
       <module name="server_basicdata_dictionary_api" target="1.8" />
       <module name="server_basicdata_dictionary_web" target="1.8" />
+      <module name="server_common" target="1.8" />
       <module name="server_config" target="1.8" />
       <module name="shared" target="1.8" />
       <module name="squirrel" target="1.8" />

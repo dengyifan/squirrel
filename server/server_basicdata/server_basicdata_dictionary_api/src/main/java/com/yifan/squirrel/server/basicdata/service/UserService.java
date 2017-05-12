@@ -12,7 +12,7 @@ public interface UserService {
 
     UserDto getUserById(String userId);
 
-    void updateUserEmailById(String userId, String sex);
+    void updateUserNameById(String userId, String name);
 
     void deleteUserById(String userId);
 

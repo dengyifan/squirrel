@@ -29,7 +29,8 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
         excludeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = EnableWebMvc.class)})
 @Import({
         DataConfig.class,
-        LoggingConfig.class
+        LoggingConfig.class,
+        RedisConfig.class
 })
 public class RootConfig {
 }
