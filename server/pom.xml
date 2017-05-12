@@ -151,40 +151,6 @@
         
     </build>
 
-    <!-- 环境设置 -->
-    <profiles>
-
-        <!--开发环境-->
-        <profile>
-            <id>dev</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <minimize>false</minimize>
-                <environment>dev</environment>
-                <environment.scope>compile</environment.scope>
-                <warOutputDirectory>server-dev/${project.version}</warOutputDirectory>
-            </properties>
-        </profile>
-
-
-        <!--测试环境-->
-        <profile>
-            <id>test</id>
-            <activation>
-                <activeByDefault>false</activeByDefault>
-            </activation>
-            <properties>
-                <minimize>false</minimize>
-                <environment>test</environment>
-                <environment.scope>compile</environment.scope>
-                <warOutputDirectory>server-test/${project.version}</warOutputDirectory>
-            </properties>
-        </profile>
-
-
-    </profiles>
 
 
 </project>
