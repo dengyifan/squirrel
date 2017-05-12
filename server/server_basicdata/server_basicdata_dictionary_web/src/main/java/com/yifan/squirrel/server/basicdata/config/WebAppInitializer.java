@@ -17,10 +17,6 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
     @Override
     public void onStartup(ServletContext servletContext) throws ServletException {
         super.onStartup(servletContext);
-        Log4jConfigListener log4jListener = new Log4jConfigListener();
-
-
-        servletContext.addListener(log4jListener);
     }
 
     protected Class<?>[] getRootConfigClasses() {

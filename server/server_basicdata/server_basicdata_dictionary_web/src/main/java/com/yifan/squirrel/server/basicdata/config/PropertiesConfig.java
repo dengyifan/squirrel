@@ -10,8 +10,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 @Configuration
 @PropertySource({
-        "classpath:jdbc.properties",
-        "classpath:log4j.properties"
+        "classpath:jdbc.properties"
 })
 public class PropertiesConfig {
 }
