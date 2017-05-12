@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>browser_basicdata</artifactId>
+        <groupId>com.yifan.squirrel.browser</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yifan.squirrel.browser</groupId>
+    <artifactId>browser_basicdata_web</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>com.yifan.squirrel.browser</groupId>
+            <artifactId>browser_basicdata_dictionary</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <finalName>browser_basicdata_web</finalName>
+
+
+        <plugins>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+
+
+            <!--
+               由于 JavaConfig 方式实现 没有 web.xml ，为了避免报错，需要添加如下配置
+            -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <warSourceDirectory>src/main/webapp</warSourceDirectory>
+                    <warName>browser_basicdata_web</warName>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+
+
+            <!--
+                【注意】：
+                tomcat6-maven-plugin ： 只支持普通页面请求响应；restful 请求过来时仍被当作普通请求
+                tomcat7-maven-plugin : 支持 restful 类请求
+            -->
+            <plugin>
+                <groupId>org.apache.tomcat.maven</groupId>
+                <artifactId>tomcat7-maven-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <url>http://localhost:8200/manager/html</url>
+                    <server>tomcat-local</server>
+                    <path>/browser_basicdata_web</path>
+                    <port>8200</port>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>

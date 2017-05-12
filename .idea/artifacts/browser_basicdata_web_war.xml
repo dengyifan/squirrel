@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="browser_basicdata_web:war">
+    <output-path>$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_web/target</output-path>
+    <root id="archive" name="browser_basicdata_web.war">
+      <element id="artifact" artifact-name="browser_basicdata_web:war exploded" />
+    </root>
+  </artifact>
+</component>

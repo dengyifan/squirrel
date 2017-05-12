@@ -9,6 +9,11 @@
        用于构建一个项目包含了前端（browser）和后端（server）的服务(B/S)
     -->
 
+    <!--
+       关于 maven 模块化实现可参照下面的博客
+       Maven最佳实践：划分模块:http://juvenshun.iteye.com/blog/305865
+    -->
+
 
     <modelVersion>4.0.0</modelVersion>
 
