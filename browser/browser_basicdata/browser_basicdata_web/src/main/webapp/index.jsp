@@ -11,6 +11,6 @@
     <title>首页</title>
   </head>
   <body>
-  <a href="/base/user/getAllUser">获取所有的user</a>
+  <a href="/browser_basicdata_web/main/login">Login</a>
   </body>
 </html>
