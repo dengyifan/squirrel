@@ -8,8 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_dictionary/browser_basicdata_dictionary.iml" filepath="$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_dictionary/browser_basicdata_dictionary.iml" />
       <module fileurl="file://$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_dictionary_api/browser_basicdata_dictionary_api.iml" filepath="$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_dictionary_api/browser_basicdata_dictionary_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_web/browser_basicdata_web.iml" filepath="$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_web/browser_basicdata_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shared/config_shared/config_shared.iml" filepath="$PROJECT_DIR$/shared/config_shared/config_shared.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
-      <module fileurl="file://$PROJECT_DIR$/security/security_config/security_config.iml" filepath="$PROJECT_DIR$/security/security_config/security_config.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security_web/security_web.iml" filepath="$PROJECT_DIR$/security/security_web/security_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata.iml" />
@@ -17,7 +17,6 @@
       <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_api/server_basicdata_dictionary_api.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_api/server_basicdata_dictionary_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web/server_basicdata_dictionary_web.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web/server_basicdata_dictionary_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server_common/server_common.iml" filepath="$PROJECT_DIR$/server/server_common/server_common.iml" />
-      <module fileurl="file://$PROJECT_DIR$/server/server_config/server_config.iml" filepath="$PROJECT_DIR$/server/server_config/server_config.iml" />
       <module fileurl="file://$PROJECT_DIR$/shared/shared.iml" filepath="$PROJECT_DIR$/shared/shared.iml" />
       <module fileurl="file://$PROJECT_DIR$/squirrel.iml" filepath="$PROJECT_DIR$/squirrel.iml" />
     </modules>

@@ -15,7 +15,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>security_web</module>
-        <module>security_config</module>
     </modules>
 
 

@@ -17,8 +17,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.yifan.squirrel.security</groupId>
-            <artifactId>security_config</artifactId>
+            <groupId>com.yifan.squirrel.shared</groupId>
+            <artifactId>config_shared</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -31,7 +31,7 @@
     <orderEntry type="module" module-name="server_common" />
     <orderEntry type="module" module-name="server_basicdata_dictionary_api" />
     <orderEntry type="module" module-name="basicdata_shared" />
-    <orderEntry type="module" module-name="server_config" />
+    <orderEntry type="module" module-name="config_shared" />
     <orderEntry type="library" scope="TEST" name="Maven: junit:junit:4.12" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.hamcrest:hamcrest-core:1.3" level="project" />
     <orderEntry type="library" name="Maven: mysql:mysql-connector-java:6.0.6" level="project" />

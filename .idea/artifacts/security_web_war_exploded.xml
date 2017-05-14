@@ -7,8 +7,8 @@
           <element id="module-output" name="security_web" />
         </element>
         <element id="directory" name="lib">
-          <element id="archive" name="security_config-1.0-SNAPSHOT.jar">
-            <element id="module-output" name="security_config" />
+          <element id="archive" name="config_shared-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="config_shared" />
           </element>
           <element id="library" level="project" name="Maven: org.springframework.security:spring-security-core:4.2.2.RELEASE" />
           <element id="library" level="project" name="Maven: aopalliance:aopalliance:1.0" />

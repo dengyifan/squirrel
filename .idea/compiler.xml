@@ -11,9 +11,10 @@
         <module name="browser_basicdata_dictionary" />
         <module name="browser_basicdata_dictionary_api" />
         <module name="browser_basicdata_web" />
+        <module name="config" />
+        <module name="config_shared" />
         <module name="demo_share" />
         <module name="demo_shared" />
-        <module name="security_config" />
         <module name="security_web" />
         <module name="server_basicdata_api" />
         <module name="server_basicdata_dicionary_api" />
@@ -21,7 +22,6 @@
         <module name="server_basicdata_dictionary_api" />
         <module name="server_basicdata_dictionary_web" />
         <module name="server_common" />
-        <module name="server_config" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +35,8 @@
       <module name="browser_basicdata_dictionary" target="1.8" />
       <module name="browser_basicdata_dictionary_api" target="1.8" />
       <module name="browser_basicdata_web" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="config_shared" target="1.8" />
       <module name="demo_share" target="1.8" />
       <module name="demo_shared" target="1.8" />
       <module name="security" target="1.8" />

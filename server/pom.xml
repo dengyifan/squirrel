@@ -15,7 +15,6 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>server_basicdata</module>
-        <module>server_config</module>
         <module>server_common</module>
     </modules>
 
