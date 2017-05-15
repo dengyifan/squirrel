@@ -1,21 +1,16 @@
 package com.yifan.squirrel.browser.basicdata.config;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.io.PathResource;
-import org.springframework.core.io.Resource;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.web.servlet.handler.SimpleUrlHandlerMapping;
-import org.springframework.web.servlet.resource.ResourceHttpRequestHandler;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Properties;
 
 /**
  * Created by yifan on 17-5-7.
@@ -24,6 +19,9 @@ import java.util.Properties;
 @EnableWebMvc
 @ComponentScan("com.yifan.**.controller")
 public class WebConfig extends WebMvcConfigurerAdapter {
+
+    Logger logger = LoggerFactory.getLogger(WebConfig.class);
+
 
     //配置jsp视图
     @Bean
@@ -42,28 +40,11 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     }
 
 
-    @Bean
-    public ResourceHttpRequestHandler resourceHttpRequestHandler(){
-        ResourceHttpRequestHandler handler = new ResourceHttpRequestHandler();
-
-        PathResource resource = new PathResource("/scripts/");
-        List<Resource> resourceList = new ArrayList<Resource>();
-        resourceList.add(resource);
-        handler.setLocations(resourceList);
-        return handler;
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        logger.info("addResourceHandlers");
+        registry.addResourceHandler("/scripts/**").addResourceLocations("/WEB-INF/scripts/");
+        registry.addResourceHandler("/images/**").addResourceLocations("/WEB-INF/images/");
+        registry.addResourceHandler("/css/**").addResourceLocations("/WEB-INF/css/");
     }
-
-
-    @Bean
-    public SimpleUrlHandlerMapping simpleUrlHandlerMapping() {
-        SimpleUrlHandlerMapping mapping = new SimpleUrlHandlerMapping();
-        mapping.setDefaultHandler(resourceHttpRequestHandler());
-
-        Properties properties = new Properties();
-        properties.put("/scripts/",resourceHttpRequestHandler());
-        mapping.setMappings(properties);
-        return mapping;
-    }
-
-
 }

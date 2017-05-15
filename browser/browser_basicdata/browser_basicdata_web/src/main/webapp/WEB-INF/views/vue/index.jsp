@@ -8,9 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Hello Vue</title>
+    <title>Hello Vue2</title>
 
-    <script type="text/javascript" src="../../scripts/common/vue/vue_2_3_3.js"></script>
+    <script type="text/javascript" src="../scripts/common/vue/vue_2_3_3.js"></script>
 
 
 </head>
