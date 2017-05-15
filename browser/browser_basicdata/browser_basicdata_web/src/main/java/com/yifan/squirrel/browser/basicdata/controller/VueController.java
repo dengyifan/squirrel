@@ -17,4 +17,12 @@ public class VueController {
         return "/vue/index";
     }
 
+
+
+    @RequestMapping(path = "/instance", method = RequestMethod.GET)
+    public String instance(Model model){
+        return "/vue/instance";
+    }
+
+
 }
