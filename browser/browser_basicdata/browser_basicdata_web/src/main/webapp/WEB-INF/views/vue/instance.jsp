@@ -41,6 +41,51 @@
 
     <div id="demo">{{ fullName }}</div>
 
+
+    <div id="conditionRender">
+        <h3 v-if="ok">Yes</h3>
+        <h3 v-else="">No</h3>
+
+        <template v-if="ok">
+            <div>
+                <h3>Title</h3>
+                <p>Paragraph 1</p>
+                <p>Paragraph 2</p>
+            </div>
+        </template>
+
+        <div v-if="Math.random() > 0.5">
+            Now you see me
+        </div>
+        <div v-else>
+            Now you don't
+        </div>
+
+
+        <div v-if="type === 'A' ">
+            A
+        </div>
+        <div v-else-if="type === 'B' ">
+            B
+        </div>
+        <div v-else-if="type === 'C' ">
+           C
+        </div>
+        <div v-else>
+            Not A/B/C
+        </div>
+
+
+        <template v-if="loginType === 'username' ">
+            <label>Username</label>
+            <input placeholder="Enter your username" key="username-input"/>
+        </template>
+        <template v-else>
+            <label>Email</label>
+            <input placeholder="Enter your address" key="email-input"/>
+        </template>
+    </div>
+
     <script type="text/javascript">
         var data = {a:1};
         var vm = new Vue({
@@ -130,6 +175,15 @@
                         this.lastName = names[names.length - 1]
                     }
                 }
+            }
+        });
+
+        var conditionRenderApp = new Vue({
+            el:'#conditionRender',
+            data:{
+                ok:true,
+                type:'D',
+                loginType:'username'
             }
         });
 

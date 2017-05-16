@@ -24,5 +24,10 @@ public class VueController {
         return "/vue/instance";
     }
 
+    @RequestMapping(path = "/list", method = RequestMethod.GET)
+    public String list(Model model){
+        return "/vue/list";
+    }
+
 
 }
