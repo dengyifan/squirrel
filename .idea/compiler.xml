@@ -25,32 +25,21 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="base" target="1.8" />
-      <module name="base_api" target="1.8" />
-      <module name="basic" target="1.8" />
-      <module name="basicdata" target="1.8" />
       <module name="basicdata_shared" target="1.8" />
       <module name="browser" target="1.8" />
       <module name="browser_basicdata" target="1.8" />
       <module name="browser_basicdata_dictionary" target="1.8" />
       <module name="browser_basicdata_dictionary_api" target="1.8" />
       <module name="browser_basicdata_web" target="1.8" />
-      <module name="config" target="1.8" />
       <module name="config_shared" target="1.8" />
-      <module name="demo_share" target="1.8" />
-      <module name="demo_shared" target="1.8" />
       <module name="security" target="1.8" />
-      <module name="security_config" target="1.8" />
       <module name="security_web" target="1.8" />
       <module name="server" target="1.8" />
       <module name="server_basicdata" target="1.8" />
-      <module name="server_basicdata_api" target="1.8" />
-      <module name="server_basicdata_dicionary_api" target="1.8" />
       <module name="server_basicdata_dictionary" target="1.8" />
       <module name="server_basicdata_dictionary_api" target="1.8" />
       <module name="server_basicdata_dictionary_web" target="1.8" />
       <module name="server_common" target="1.8" />
-      <module name="server_config" target="1.8" />
       <module name="shared" target="1.8" />
       <module name="squirrel" target="1.8" />
     </bytecodeTargetLevel>

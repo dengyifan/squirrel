@@ -19,7 +19,27 @@
         <br/>
 
         <span v-once> This will never change: {{ msg }}</span>
+
+        <br/>
+
+        <div v-html="rawHtml"></div>
+
+        <div v-bind:id="dynamicId">
+            <button v-bind:disabled="someDynamicCondition"
+                    v-on:onclick="doSomething">Button</button>
+        </div>
+
+        <div v-bind:id="'list-' + id">
+            <a v-bind:href="url">OnlyYou</a>
+        </div>
     </div>
+
+    <div id="example">
+        <p>Original message: "{{ message }}"</p>
+        <p>Computed reversed message: "{{ reversedMessage }}"</p>
+    </div>
+
+    <div id="demo">{{ fullName }}</div>
 
     <script type="text/javascript">
         var data = {a:1};
@@ -45,10 +65,75 @@
         var app1 = new Vue({
             el:'#app-1',
             data:{
-                msg:'Vue.js'
+                msg:'Vue.js',
+                rawHtml:'<h3>Hello Vue.js</h3>',
+                dynamicId:'testBindAttr',
+                someDynamicCondition:false,
+                id:'onlyYou',
+                url:'http://www.baidu.com'
+            },
+            methods:{
+                doSomething:function(){
+                    alert('Hello Vue.js');
+                }
             }
         });
 
+        var exampleApp = new Vue({
+            el:'#example',
+            data:{
+                message:'Hello'
+            },
+            computed:{
+                reversedMessage:function(){
+                    return this.message.split('').reverse().join('');
+                }
+            }
+        });
+
+        /*
+         * 使用 watch 函数来观察属性的变化
+        var demoApp = new Vue({
+            el:'#demo',
+            data:{
+                firstName:'Foo',
+                lastName:'Bar',
+                fullName:'Foo Bar'
+            },
+            watch:{
+                firstName:function(val){
+                    this.fullName = val + ' ' + this.lastName;
+                },
+                lastName:function(val){
+                    this.fullName = this.firstName + ' ' + val;
+                }
+            }
+        });
+        */
+
+        //使用计算属性来实现 watch 的功能
+        var demoApp = new Vue({
+            el:'#demo',
+            data:{
+                firstName:'Foo',
+                lastName:'Bar',
+                fullName:'Foo Bar'
+            },
+            computed:{
+                fullName:{
+                    get:function(){ //getter
+                        return this.firstName + ' ' + this.lastName;
+                    },
+                    set:function(newValue){ //setter
+                        var names = newValue.split(' ');
+                        this.firstName = names[0];
+                        this.lastName = names[names.length - 1]
+                    }
+                }
+            }
+        });
+
+        //TODO : Class 与 Style 绑定
     </script>
 </body>
 </html>
