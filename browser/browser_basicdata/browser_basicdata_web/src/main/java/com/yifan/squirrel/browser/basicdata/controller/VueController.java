@@ -30,4 +30,15 @@ public class VueController {
     }
 
 
+    @RequestMapping(path = "/event", method = RequestMethod.GET)
+    public String event(Model model){
+        return "/vue/event";
+    }
+
+
+    @RequestMapping(path = "/component", method = RequestMethod.GET)
+    public String component(Model model){
+        return "/vue/component";
+    }
+
 }
