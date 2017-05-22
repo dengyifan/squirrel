@@ -33,7 +33,8 @@ import static java.util.Arrays.asList;
  *
  * 注意下面多视图的配置：thymeleaf jsp
  * 优化级值越低的级别越高
- *
+ * 返回 jsp 时不用添加后缀;
+ * 返回 html 时需要返回后缀 如:hello.html
  *
  */
 @Configuration
@@ -63,8 +64,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     }
 
 
-
-
     //配置静态资源处理
     @Override
     public void configureDefaultServletHandling(DefaultServletHandlerConfigurer configurer) {
@@ -75,6 +74,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         logger.info("addResourceHandlers");
+
         /*
         registry.addResourceHandler("/scripts/**").addResourceLocations("/WEB-INF/scripts/");
         registry.addResourceHandler("/images/**").addResourceLocations("/WEB-INF/images/");
@@ -150,7 +150,6 @@ public class WebConfig extends WebMvcConfigurerAdapter {
      */
     @Bean
     public SpringResourceTemplateResolver resourceTemplateResolver() {
-
         SpringResourceTemplateResolver resolver = new SpringResourceTemplateResolver();
         resolver.setSuffix(".html");
         resolver.setTemplateMode("HTML5");

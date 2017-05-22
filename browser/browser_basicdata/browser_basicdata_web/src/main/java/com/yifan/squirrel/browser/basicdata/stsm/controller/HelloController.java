@@ -13,7 +13,7 @@ public class HelloController {
 
     @RequestMapping("/index")
     public String hello() {
-        return "hello";
+        return "hello.html";
     }
 
     @RequestMapping("/index2")
