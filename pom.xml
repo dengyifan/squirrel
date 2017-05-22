@@ -43,6 +43,7 @@
         <jackson.version>2.5.0</jackson.version>
         <jedisVersion>2.9.0</jedisVersion>
         <springDataRedisVersion>1.8.3.RELEASE</springDataRedisVersion>
+        <thymeleafVersion>3.0.6.RELEASE</thymeleafVersion>
     </properties>
 
 
@@ -243,6 +244,11 @@
             <version>${springDataRedisVersion}</version>
         </dependency>
 
+        <dependency>
+            <groupId>org.thymeleaf</groupId>
+            <artifactId>thymeleaf-spring4</artifactId>
+            <version>${thymeleafVersion}</version>
+        </dependency>
 
 
     </dependencies>
