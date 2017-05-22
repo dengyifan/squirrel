@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>组件</title>
-    <script type="text/javascript" src="../scripts/common/vue/vue_2_3_3.js"></script>
+    <%@include file="common.jsp"%>
 </head>
 <body>
     <div id="example">
@@ -22,6 +22,19 @@
         <simple-counter></simple-counter>
         <simple-counter></simple-counter>
     </div>
+
+    <div id="example-4">
+        <input v-model="parentMsg">
+        <br>
+        <child v-bind:message="parentMsg"></child>
+    </div>
+
+    <div id="counter-event-example">
+        <p>{{ total }}</p>
+        <button-counter v-on:increment="incrementTotal"></button-counter>
+        <button-counter v-on:increment="incrementTotal"></button-counter>
+    </div>
+
 
     <script type="text/javascript">
         Vue.component('my-component',{
@@ -47,7 +60,77 @@
         });
 
 
-        //使用 v-on 绑定自定义事件
+        Vue.component('child',{
+            //声明 props
+            props:['message'],
+            template:'<span> {{ message }} </span>'
+        });
+
+        new Vue({
+            el:'#example-4',
+            data:{
+                parentMsg:''
+            }
+        });
+
+
+
+        Vue.component('example',{
+            props:{
+                propA:Number,
+                propB:[String,Number],
+                propC:{
+                    type:String,
+                    required:true
+                },
+                propD:{
+                    type:Number,
+                    default:100
+                },
+                propE:{
+                    type:Object,
+                    default:function(){
+                        return {message:'Hello'};
+                    }
+                },
+                propF:{
+                    validator:function(value){
+                        return value > 10;
+                    }
+                }
+            }
+        });
+
+
+        Vue.component('button-counter',{
+            template:'<button v-on:click="increment">{{ counter }}</button>',
+            data:function(){
+                return {
+                    counter:0
+                }
+            },
+            methods:{
+                increment:function(){
+                    this.counter += 1;
+                    this.$emit('increment');
+                }
+            }
+        });
+
+
+        new Vue({
+            el:'#counter-event-example',
+            data:{
+                total:0
+            },
+            methods:{
+                incrementTotal:function(){
+                    this.total += 1
+                }
+            }
+        });
+
+
 
 
 

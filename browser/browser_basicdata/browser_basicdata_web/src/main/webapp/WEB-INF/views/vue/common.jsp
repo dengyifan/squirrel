@@ -1,0 +1,1 @@
+<script type="text/javascript" src="../statics/scripts/common/vue/vue_2_3_3.js"></script>

@@ -9,7 +9,7 @@
 <html>
 <head>
     <title>Vue实例</title>
-    <script type="text/javascript" src="../scripts/common/vue/vue_2_3_3.js"></script>
+    <%@include file="common.jsp"%>
 
 </head>
 <body>

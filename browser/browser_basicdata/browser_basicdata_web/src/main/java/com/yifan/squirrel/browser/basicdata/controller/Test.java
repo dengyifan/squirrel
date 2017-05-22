@@ -1,21 +1,17 @@
 package com.yifan.squirrel.browser.basicdata.controller;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /**
  * Created by yifan on 2017/5/17.
  */
 public class Test {
     public static void main(String[] args){
 
-        int tempLimit = 100;
-        int modVal = tempLimit % 3;
-        System.out.println(modVal);
-
-        int size = (tempLimit / 3) ;
-
-
-
-        System.out.println(size);
-
-        System.out.println(size + modVal);
+        Date now = new Date();
+        SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss");
+        String str = format.format(now);
+        System.out.println(str);
     }
 }
