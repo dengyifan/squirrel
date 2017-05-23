@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/browser/base" />
     <file type="web" url="file://$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_web" />
+    <file type="web" url="file://$PROJECT_DIR$/browser/browser_statics" />
     <file type="web" url="file://$PROJECT_DIR$/security/security_web" />
     <file type="web" url="file://$PROJECT_DIR$/server/basic" />
     <file type="web" url="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web" />

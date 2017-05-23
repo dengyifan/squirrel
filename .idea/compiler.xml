@@ -11,6 +11,9 @@
         <module name="browser_basicdata_dictionary" />
         <module name="browser_basicdata_dictionary_api" />
         <module name="browser_basicdata_web" />
+        <module name="browser_common" />
+        <module name="browser_login" />
+        <module name="browser_statics" />
         <module name="config" />
         <module name="config_shared" />
         <module name="demo_share" />
@@ -31,6 +34,9 @@
       <module name="browser_basicdata_dictionary" target="1.8" />
       <module name="browser_basicdata_dictionary_api" target="1.8" />
       <module name="browser_basicdata_web" target="1.8" />
+      <module name="browser_common" target="1.8" />
+      <module name="browser_login" target="1.8" />
+      <module name="browser_statics" target="1.8" />
       <module name="config_shared" target="1.8" />
       <module name="security" target="1.8" />
       <module name="security_web" target="1.8" />

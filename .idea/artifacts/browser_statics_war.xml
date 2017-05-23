@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="browser_statics:war">
+    <output-path>$PROJECT_DIR$/browser/browser_statics/target</output-path>
+    <root id="archive" name="browser_statics.war">
+      <element id="artifact" artifact-name="browser_statics:war exploded" />
+    </root>
+  </artifact>
+</component>

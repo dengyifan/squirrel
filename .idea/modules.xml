@@ -8,6 +8,9 @@
       <module fileurl="file://$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_dictionary/browser_basicdata_dictionary.iml" filepath="$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_dictionary/browser_basicdata_dictionary.iml" />
       <module fileurl="file://$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_dictionary_api/browser_basicdata_dictionary_api.iml" filepath="$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_dictionary_api/browser_basicdata_dictionary_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_web/browser_basicdata_web.iml" filepath="$PROJECT_DIR$/browser/browser_basicdata/browser_basicdata_web/browser_basicdata_web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/browser/browser_common/browser_common.iml" filepath="$PROJECT_DIR$/browser/browser_common/browser_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/browser/browser_login/browser_login.iml" filepath="$PROJECT_DIR$/browser/browser_login/browser_login.iml" />
+      <module fileurl="file://$PROJECT_DIR$/browser/browser_statics/browser_statics.iml" filepath="$PROJECT_DIR$/browser/browser_statics/browser_statics.iml" />
       <module fileurl="file://$PROJECT_DIR$/shared/config_shared/config_shared.iml" filepath="$PROJECT_DIR$/shared/config_shared/config_shared.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
       <module fileurl="file://$PROJECT_DIR$/security/security_web/security_web.iml" filepath="$PROJECT_DIR$/security/security_web/security_web.iml" />
