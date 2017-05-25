@@ -1,4 +1,4 @@
-package com.yifan.squirrel.browser.login.controller;
+package com.yifan.squirrel.browser.login.server.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -13,7 +13,7 @@ public class LoginController {
 
     @RequestMapping("/index")
     public ModelAndView index(ModelAndView mv) {
-        mv.setViewName("/login/index.html");
+        mv.setViewName("hello.html");
         return mv;
     }
 }

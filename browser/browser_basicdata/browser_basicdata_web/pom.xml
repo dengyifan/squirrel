@@ -15,6 +15,7 @@
     <packaging>war</packaging>
 
 
+
     <dependencies>
         <dependency>
             <groupId>com.yifan.squirrel.browser</groupId>
@@ -35,6 +36,8 @@
     </dependencies>
 
 
+
+
     <build>
         <finalName>browser_basicdata_web</finalName>
 
@@ -50,11 +53,9 @@
                 </configuration>
             </plugin>
 
-
-
             <!--
                由于 JavaConfig 方式实现 没有 web.xml ，为了避免报错，需要添加如下配置
-            -->
+             -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
@@ -65,6 +66,7 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
+
 
 
             <!--
@@ -85,6 +87,8 @@
                 </configuration>
             </plugin>
         </plugins>
+
+
 
     </build>
 </project>

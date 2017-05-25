@@ -1,4 +1,4 @@
-package com.yifan.squirrel.browser.basicdata.service.impl;
+package com.yifan.squirrel.browser.basicdata.server.service.impl;
 
 
 import com.yifan.squirrel.browser.basicdata.service.UserService;

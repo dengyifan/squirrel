@@ -4,6 +4,8 @@ import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 import javax.servlet.Filter;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
 
 /**
@@ -23,6 +25,15 @@ public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServlet
         return new String[]{"/"};
     }
 
+
+    @Override
+    public void onStartup(ServletContext servletContext) throws ServletException {
+        super.onStartup(servletContext);
+
+        //启动完成后 将子模块下面相应内容 复制到 web 项目相应目录下
+        ModuleManageService moduleManageService = new ModuleManageService(servletContext);
+        moduleManageService.moduleInit();
+    }
 
     @Override
     protected Filter[] getServletFilters() {
