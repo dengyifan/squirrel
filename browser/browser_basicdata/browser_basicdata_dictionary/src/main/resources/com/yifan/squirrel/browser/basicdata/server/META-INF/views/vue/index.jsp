@@ -5,6 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-    <h3>Login</h3>
+<h3>Hello Vue</h3>
 </body>
 </html>

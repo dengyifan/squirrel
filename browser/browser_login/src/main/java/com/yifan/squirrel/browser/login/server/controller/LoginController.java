@@ -13,7 +13,7 @@ public class LoginController {
 
     @RequestMapping("/index")
     public ModelAndView index(ModelAndView mv) {
-        mv.setViewName("hello.html");
+        mv.setViewName("login.html");
         return mv;
     }
 }

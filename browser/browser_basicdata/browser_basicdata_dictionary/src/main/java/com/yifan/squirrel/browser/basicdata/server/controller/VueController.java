@@ -1,4 +1,4 @@
-package com.yifan.squirrel.browser.basicdata.controller;
+package com.yifan.squirrel.browser.basicdata.server.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
