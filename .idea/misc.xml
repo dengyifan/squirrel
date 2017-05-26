@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/security/security_web" />
     <file type="web" url="file://$PROJECT_DIR$/server/basic" />
     <file type="web" url="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web" />
+    <file type="web" url="file://$PROJECT_DIR$/server/server_rest" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
