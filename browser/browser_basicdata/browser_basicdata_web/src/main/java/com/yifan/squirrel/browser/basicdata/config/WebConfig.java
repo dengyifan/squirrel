@@ -76,13 +76,10 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         logger.info("addResourceHandlers");
 
-        /*
         registry.addResourceHandler("/scripts/**").addResourceLocations("/WEB-INF/scripts/");
         registry.addResourceHandler("/images/**").addResourceLocations("/WEB-INF/images/");
         registry.addResourceHandler("/css/**").addResourceLocations("/WEB-INF/css/");
-        */
 
-        registry.addResourceHandler("/statics/**").addResourceLocations("/WEB-INF/statics/");
     }
 
     @Bean

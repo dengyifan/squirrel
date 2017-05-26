@@ -107,24 +107,46 @@ public class ModuleManageService{
                 }
             }
 
-        } catch (Exception var21) {
-            throw new IllegalStateException(var21.getMessage(), var21);
+        } catch (Exception e) {
+            throw new IllegalStateException(e.getMessage(), e);
         }
     }
 
     private void createDirectory(File dir) {
-        boolean b;
-        if(!dir.exists()) {
-            b = dir.mkdirs();
-            if(!b) {
-                LOGGER.error("create dir failure!");
-            }
+        if(dir.exists()) {
+            deleteDir(dir);
+        }
 
-            if(LOGGER.isInfoEnabled()) {
-                LOGGER.info("[ModuleManageEvent] create dir: " + dir);
-            }
+
+        boolean mk = dir.mkdirs();
+        if(!mk) {
+            LOGGER.error("create dir failure!");
+        }
+
+        if(LOGGER.isInfoEnabled()) {
+            LOGGER.info("[ModuleManageEvent] create dir: " + dir);
         }
     }
+
+
+    private boolean deleteDir(File dir) {
+
+        if (dir.isDirectory()) {
+            String[] children = dir.list();
+
+            //递归删除目录中的子目录下
+            for (int i=0; i<children.length; i++) {
+                boolean success = deleteDir(new File(dir, children[i]));
+                if (!success) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+
+    }
+
 
     public ServletContext getServletContext() {
         return servletContext;
