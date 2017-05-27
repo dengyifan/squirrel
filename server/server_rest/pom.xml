@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.yifan.squirrel.squirrel.server</groupId>
+    <groupId>com.yifan.squirrel.server</groupId>
     <artifactId>server_rest</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>

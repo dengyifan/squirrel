@@ -1,7 +1,6 @@
 package com.yifan.squirrel.server.rest.config;
 
 import com.yifan.squirrel.server.rest.controller.HelloController;
-
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 import java.util.HashSet;
