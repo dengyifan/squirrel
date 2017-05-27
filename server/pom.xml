@@ -16,6 +16,7 @@
     <modules>
         <module>server_basicdata</module>
         <module>server_common</module>
+        <module>server_rest</module>
     </modules>
 
 

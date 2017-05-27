@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_api/server_basicdata_dictionary_api.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_api/server_basicdata_dictionary_api.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web/server_basicdata_dictionary_web.iml" filepath="$PROJECT_DIR$/server/server_basicdata/server_basicdata_dictionary_web/server_basicdata_dictionary_web.iml" />
       <module fileurl="file://$PROJECT_DIR$/server/server_common/server_common.iml" filepath="$PROJECT_DIR$/server/server_common/server_common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server/server_rest/server_rest.iml" filepath="$PROJECT_DIR$/server/server_rest/server_rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/shared/shared.iml" filepath="$PROJECT_DIR$/shared/shared.iml" />
       <module fileurl="file://$PROJECT_DIR$/squirrel.iml" filepath="$PROJECT_DIR$/squirrel.iml" />
     </modules>
