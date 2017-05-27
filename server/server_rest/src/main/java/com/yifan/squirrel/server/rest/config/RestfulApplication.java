@@ -10,7 +10,7 @@ import java.util.Set;
 /**
  * Created by yifan on 17-5-26.
  */
-@ApplicationPath("/server/resources")
+@ApplicationPath("/")
 public class RestfulApplication extends Application {
 
     @Override
