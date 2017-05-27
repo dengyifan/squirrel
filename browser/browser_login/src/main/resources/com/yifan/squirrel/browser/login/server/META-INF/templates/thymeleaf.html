@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Good Thymes Virtual Grocery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" media="all" href="../../css/gtvg.css" th:href="@{/css/gtvg.css}" />
+</head>
+<body>
+
+
+    <div>
+
+        <p th:utext="#{home.welcome}">Welcome to our grocery store, Sebastian!</p>
+
+
+        <p th:text="${1+2}"></p>
+        <p th:text="${today}">today</p>
+        <p th:text="${#calendars.format(now,'yyyy-MM-dd HH:mm:ss')}">now</p>
+
+        <p>
+            Established locale country: <span th:text="${#locale.country}">US</span>.
+        </p>
+
+        <p th:text="${#request.getAttribute('user').getName()}">userInfo</p>
+
+        <p th:text="${#request.getContextPath()}">contextPath</p>
+    </div>
+
+
+    <div>
+        <h5>messages</h5>
+        <p th:text="${#messages.msg('home.welcome')}">message properties</p>
+
+        <h5>dates</h5>
+        <p th:text="${#dates.listFormat(dateList)}"></p>
+        <p th:text="${#dates.format(now,'yyyy年MM月dd HH时mm分ss秒')}"></p>
+
+        <h5>numbers</h5>
+        <p th:text="${#numbers.sequence(1,10)}"></p>
+        <p th:text="${#numbers.sequence(1,20,3)}"></p>
+
+        <h5>strings</h5>
+        <p th:text="${#strings.toString(user)}"></p>
+        <p th:text="${#strings.isEmpty(user.getName())}"></p>
+        <p th:text="${#strings.containsIgnoreCase(user.getName(),'李')}"></p>
+        <p th:text="${#strings.trim(' '+user.getName() +'  ')}"></p>
+    </div>
+
+
+    <div th:object="${user}">
+        <p>姓名:<span th:text="*{name}">李四</span></p>
+        <p>年龄:<span th:text="*{age}">20</span></p>
+        <p>性别：<span th:text="${gender == 0 ? '男':'女'}">女</span></p>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
