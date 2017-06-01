@@ -3,46 +3,34 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>browser_basicdata</artifactId>
-        <groupId>com.yifan.squirrel.browser</groupId>
+        <artifactId>browser</artifactId>
+        <groupId>com.yifan.squirrel</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.yifan.squirrel.browser</groupId>
-    <artifactId>browser_basicdata_web</artifactId>
+    <artifactId>browser_chat</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-
+    <properties>
+        <websocketVersion>1.0</websocketVersion>
+    </properties>
 
     <dependencies>
         <dependency>
-            <groupId>com.yifan.squirrel.browser</groupId>
-            <artifactId>browser_basicdata_dictionary</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>javax.websocket</groupId>
+            <artifactId>javax.websocket-api</artifactId>
+            <version>${websocketVersion}</version>
+            <scope>provided</scope>
         </dependency>
-        <dependency>
-            <groupId>com.yifan.squirrel.shared</groupId>
-            <artifactId>config_shared</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.yifan.squirrel.browser</groupId>
-            <artifactId>browser_login</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-
-
     </dependencies>
 
 
 
-
     <build>
-        <finalName>browser_basicdata_web</finalName>
-
+        <finalName>browser_chat</finalName>
 
         <plugins>
 
@@ -64,33 +52,25 @@
                 <version>2.4</version>
                 <configuration>
                     <warSourceDirectory>src/main/webapp</warSourceDirectory>
-                    <warName>browser_basicdata_web</warName>
+                    <warName>browser_chat</warName>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
             </plugin>
 
 
-
-            <!--
-                【注意】：
-                tomcat6-maven-plugin ： 只支持普通页面请求响应；restful 请求过来时仍被当作普通请求
-                tomcat7-maven-plugin : 支持 restful 类请求
-            -->
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.1</version>
                 <configuration>
-                    <url>http://localhost:8200/manager/html</url>
+                    <url>http://localhost:8500/manager/html</url>
                     <server>tomcat-local</server>
-                    <path>/browser_basicdata_web</path>
+                    <path>/browser_chat</path>
                     <uriEncoding>UTF-8</uriEncoding>
-                    <port>8200</port>
+                    <port>8500</port>
                 </configuration>
             </plugin>
         </plugins>
-
-
-
     </build>
+
 </project>

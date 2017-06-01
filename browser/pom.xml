@@ -23,6 +23,7 @@
         <module>browser_login</module>
         <module>browser_common</module>
         <module>browser_statics</module>
+        <module>browser_chat</module>
     </modules>
 
     <build>

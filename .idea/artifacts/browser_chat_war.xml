@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="browser_chat:war">
+    <output-path>$PROJECT_DIR$/browser/browser_chat/target</output-path>
+    <root id="archive" name="browser_chat.war">
+      <element id="artifact" artifact-name="browser_chat:war exploded" />
+    </root>
+  </artifact>
+</component>
