@@ -46,6 +46,7 @@
         <thymeleafVersion>3.0.6.RELEASE</thymeleafVersion>
         <thymeleaf-layout.version>1.2.5</thymeleaf-layout.version>
         <guavaVersion>21.0</guavaVersion>
+        <jerseyVersion>2.13</jerseyVersion>
     </properties>
 
 
@@ -294,6 +295,13 @@
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
             <version>${guavaVersion}</version>
+        </dependency>
+
+        <!-- Required only when you are using JAX-RS Client -->
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>${jerseyVersion}</version>
         </dependency>
 
 

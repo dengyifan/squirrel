@@ -9,10 +9,16 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
+import javax.ws.rs.client.InvocationCallback;
+import javax.ws.rs.client.WebTarget;
+import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.Future;
 
 /**
  * Created by yifan on 2017/5/23.
@@ -59,6 +65,47 @@ public class LoginController {
         dateList.add(instance.getTime());
 
 
+        restClient();
+
+
+        restClientAsync();
+
         return mv;
+    }
+
+
+    public void restClient() {
+        Client client = ClientBuilder.newClient();
+        String result = client.target("http://localhost:8400/server_rest/hello")
+                .request()
+                .get(String.class);
+        System.out.println("restClient result:" + result);
+        client.close();
+    }
+
+
+    /**
+     * 异步调用REST
+     */
+    public void restClientAsync() {
+        Client client = ClientBuilder.newClient();
+        WebTarget myResource= client.target("http://localhost:8400/server_rest/hello");
+        Future<String> stringFuture = myResource.request()
+                .async()
+                .get(new InvocationCallback<String>() {
+                    @Override
+                    public void completed(String s) {
+                        System.out.println("restClientAsync result:" + s);
+                        client.close();
+                    }
+
+                    @Override
+                    public void failed(Throwable throwable) {
+                        throwable.printStackTrace();
+                        client.close();
+                    }
+                });
+
+
     }
 }

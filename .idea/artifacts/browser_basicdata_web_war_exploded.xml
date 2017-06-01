@@ -64,6 +64,18 @@
           <element id="library" level="project" name="Maven: commons-fileupload:commons-fileupload:1.3" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:21.0" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-client:2.13" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.core:jersey-common:2.13" />
+          <element id="library" level="project" name="Maven: javax.annotation:javax.annotation-api:1.2" />
+          <element id="library" level="project" name="Maven: org.glassfish.jersey.bundles.repackaged:jersey-guava:2.13" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:osgi-resource-locator:1.0.1" />
+          <element id="library" level="project" name="Maven: javax.ws.rs:javax.ws.rs-api:2.0.1" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-api:2.3.0-b10" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-utils:2.3.0-b10" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2.external:aopalliance-repackaged:2.3.0-b10" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2.external:javax.inject:2.3.0-b10" />
+          <element id="library" level="project" name="Maven: org.glassfish.hk2:hk2-locator:2.3.0-b10" />
+          <element id="library" level="project" name="Maven: org.javassist:javassist:3.18.1-GA" />
         </element>
       </element>
       <element id="directory" name="META-INF">
