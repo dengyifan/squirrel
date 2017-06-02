@@ -19,14 +19,38 @@
     </properties>
 
     <dependencies>
+
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>7.0</version>
+            <scope>provided</scope>
+        </dependency>
+
+
         <dependency>
             <groupId>javax.websocket</groupId>
             <artifactId>javax.websocket-api</artifactId>
             <version>${websocketVersion}</version>
             <scope>provided</scope>
         </dependency>
+
+        <dependency>
+            <groupId>javax.websocket</groupId>
+            <artifactId>javax.websocket-client-api</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+
     </dependencies>
 
+
+
+
+    <!--
+        插件运行时 因为依赖不对 不能正常使用
+        单独部署到 tomcat7及以上是可以正常使用
+    -->
 
 
     <build>
