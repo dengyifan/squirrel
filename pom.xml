@@ -47,6 +47,7 @@
         <thymeleaf-layout.version>1.2.5</thymeleaf-layout.version>
         <guavaVersion>21.0</guavaVersion>
         <jerseyVersion>2.13</jerseyVersion>
+        <commonsLangVersion>3.4</commonsLangVersion>
     </properties>
 
 
@@ -314,6 +315,12 @@
             <version>${jerseyVersion}</version>
         </dependency>
 
+        <!-- StringUtils -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commonsLangVersion}</version>
+        </dependency>
 
     </dependencies>
 
